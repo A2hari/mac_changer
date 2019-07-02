@@ -27,7 +27,8 @@ def get_arguments():
 # interface = input('\tInterface(wlan0/eth0/other) > ')
 # mac_address = input('\tNew Mac > ')
 
-print('[+] Mac Address changing program')
+print('[+] Mac Address changing program ')
+print('[+] NOTE::Use python 3 to run this program(recomended) ')
 
 options = get_arguments()
 
