@@ -11,7 +11,7 @@ def change_mac(interface, mac_address):
     print('[+] Interface = ' + options.interface + '\n[+] New Mac Address =' + options.mac_address)
 
 
-def get_arguments():
+def get_arguments():                     #optarse part code used to get input as arguments in a single line
     parse = optparse.OptionParser()
     parse.add_option('-i', '--interface', dest="interface", help='Interface of the module to change mac addres')
     parse.add_option('-m', '--mac', dest="mac_address", help="mac address to be changed")
@@ -24,10 +24,10 @@ def get_arguments():
 
 
 
-# interface = input('\tInterface(wlan0/eth0/other) > ')
+# interface = input('\tInterface(wlan0/eth0/other) > ')  #to change the user interface un comment this and comment the entire optparse and its code
 # mac_address = input('\tNew Mac > ')
 
-print('[+] Mac Address changing program ')
+print('[+] Mac Address changing program ')                 #messages to be print
 print('[+] NOTE::Use python 3 to run this program(recomended) ')
 
 options = get_arguments()
@@ -35,4 +35,4 @@ options = get_arguments()
 interface = options.interface   #interface = options.(destination(dest in parse.add_option) file name)
 mac = options.mac_address      #mac= new variable
 
-change_mac(interface, mac)
+change_mac(interface, mac)       #function call to change mac address
